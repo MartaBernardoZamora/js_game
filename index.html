@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Juego de eventos de Javascript</h1>
+        <button popovertarget="instrucciones">Instrucciones</button>
+    </header>
+    <main>
+        <div popover id="instrucciones">
+            <h2>Instrucciones</h2>
+            <hr>
+            <p>Elige en los desplegables de elemento y evento la opción correcta.</p>
+            <p>Realiza la acción que te propone la pregunta para avanzar de nivel.</p>
+        </div>
+        <div popover id="incorrecto" >
+            <h2>No es correcto</h2>
+            <hr>
+            <p>Elige en los desplegables de elemento y evento la opción correcta.</p>
+            <p>Realiza la acción que te propone la pregunta para avanzar de nivel.</p>
+        </div>
+        <section class="animate">
+            <p data-pregunta=1 id="pregunta">1. Pasamos al siguiente nivel cuando hacemos click en el botón</p>
+        </section>
+        <section id="respuesta" class="animate">
+            <div class="div_inline">
+            <label for="elemento">Elemento</label>
+            <select id="elemento">
+                <option value=1>window</option>
+                <option value=2>document</option>
+                <option value=3 selected>document.getElementById("boton_avance")</option>
+                <option value=4>document.getElementById("img_javascript")</option>
+            </select>
+            .addEventListener('
+            </div>
+            <div class="div_inline">
+            <label for="evento">Evento</label>
+            <select id="evento">
+                <option value=1>click</option>
+                <option value=2>mouseover</option>
+                <option value=3>keydown</option>
+                <option value=4>dblclick</option>
+                <option value=5>resize</option>
+            </select>
+            ', function);
+            </div>
+        </section>
+        <section class="animate">
+            <div id="div_img">
+                <img id="img_javascript" src="javascript.jpg">
+            </div>        
+            <button id="boton_avance">Botón de avance</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
+
