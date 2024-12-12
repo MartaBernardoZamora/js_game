@@ -6,7 +6,7 @@ const boton_avance = document.getElementById("boton_avance");
 
 boton_avance.addEventListener('click', () => comprobar(1, "2. Intenta ahora que al hacer doble click sobre la imagen se pase a la siguiente pregunta", 3, 1));
 
-document.getElementById("img_javascript").addEventListener('dblclick', () => comprobar(2, "3. Ahora probemos cambiando el tamaño de la pantalla para pasar de nivel", 4, 4));
+document.getElementById("img_javascript").addEventListener('dblclick', () => comprobar(2, "3. Ahora probemos cambiando el tamaño de la ventana para pasar de nivel", 4, 4));
 
 window.addEventListener('resize', () => comprobar(3, "4. Vamos a pasar el ratón por encima del botón para avanzar en el juego", 1, 5));
 
